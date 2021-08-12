@@ -184,24 +184,24 @@ end)
 
 RegisterNetEvent('efe:birincikapidoorlock') -- BİRİNCİ KAPI 1
 AddEventHandler('efe:birincikapidoorlock', function()
-    TriggerServerEvent('ld-doors:change-lock-state', 480, false) -- 1.kapı sol 
-    TriggerServerEvent('ld-doors:change-lock-state', 479, false) -- 1. kapı sağ
+    TriggerServerEvent('np-doors:change-lock-state', 480, false) -- 1.kapı sol 
+    TriggerServerEvent('np-doors:change-lock-state', 479, false) -- 1. kapı sağ
 end)
 
 RegisterNetEvent('efe:ikincikapidoorlock') -- İKİNCİ KAPI 2
 AddEventHandler('efe:ikincikapidoorlock', function()
-	TriggerServerEvent('ld-doors:change-lock-state', 481, false) -- 2.kapı
+	TriggerServerEvent('np-doors:change-lock-state', 481, false) -- 2.kapı
     TriggerEvent("efe:pedicreatele")
 end)
 
 RegisterNetEvent('efe:ucuncukapidoorlock') -- İKİNCİ KAPI 3 
 AddEventHandler('efe:ucuncukapidoorlock', function()
-	TriggerServerEvent('ld-doors:change-lock-state', 484, false) -- sağ kapı en içteki
+	TriggerServerEvent('np-doors:change-lock-state', 484, false) -- sağ kapı en içteki
 end)
 
 RegisterNetEvent('efe:dorduncukapidoorlock') -- İKİNCİ KAPI 4
 AddEventHandler('efe:dorduncukapidoorlock', function()
-	TriggerServerEvent('ld-doors:change-lock-state', 483, false) -- sol kapı en içteki
+	TriggerServerEvent('np-doors:change-lock-state', 483, false) -- sol kapı en içteki
 end)
 
 RegisterNetEvent('efe:pedicreatele') -- İKİNCİ KAPI sexk
