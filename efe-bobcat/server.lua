@@ -1,21 +1,6 @@
 ESX = nil
 
 TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
-if (GetCurrentResourceName() == "efe-bobcat") then
-else
-	print("")
-	print("--------------------------------")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("Scriptin ismi efe-bobcat olmali.")
-	print("--------------------------------")
-	print("")
-	ExecuteCommand('stop efe-bobcat')
-end
 
 ESX.RegisterServerCallback('efe:bobcatpolice', function(source, cb)
 	local xPlayers = ESX.GetPlayers()
