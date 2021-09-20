@@ -98,22 +98,22 @@ function ikincianim() -- İÇERİDEKİ İLK KAPI ANİMASYON
 	TriggerEvent("efe:ikincikapidoorlock")
 end
 
-RegisterNetEvent('efe:firstdoor') -- BİRİNCİ KAPI
+RegisterNetEvent('efe:firstdoor') -- FIRST DOOR
 AddEventHandler('efe:firstdoor', function()
     ESX.TriggerServerCallback('efe:bobcatpolice', function(count)
         if count >= Config.MinPolice then
     exports["np-memorygame"]:thermiteminigame(1, 1, 1, 1,
     function() -- success
         TriggerEvent("efe:bobcatkapiac")
-        TriggerEvent('efe:dispatchyolla', "10-55", "Bobcat Güvenlik Soygunu", "Bobcat güvenlik bankasının alarmları tetiklendi.", 2, "Bobcat Güvenlik Bankası Soygunu", 500, 0, 200)        
+        TriggerEvent('efe:dispatchyolla', "10-55", "Bobcat Security Robbery", "Bobcat security bank alarms triggered.", 2, "Bobcat Security Bank Robbery", 500, 0, 200)        
         TriggerEvent("inventory:removeItem","thermite",1)
     end,
     function() -- failure
-        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Başaramadın.'})
+        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'You failed!'})
         TriggerEvent("inventory:removeItem","thermite",1)
         end)
     else
-        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Yeterince polis yok!'})
+        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Fuckoff There are no cops'})
     end
     end)
 end)    
@@ -128,11 +128,11 @@ AddEventHandler('efe:secondoor', function()
         TriggerEvent("inventory:removeItem","thermite",1)
     end,
     function() -- failure
-        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Başaramadın.'})
+        TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'You failed.'})
         TriggerEvent("inventory:removeItem","thermite",1)
     end)
 else
-    TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Yeterince polis yok!'})
+    TriggerEvent('mythic_notify:client:SendAlert', { type = 'inform', text = 'Fuckoff There are no cops'})
         end
     end)
 end)
@@ -149,7 +149,7 @@ AddEventHandler("efe:ptfxparticle", function(method)
     SetPtfxAssetNextCall("scr_ornate_heist")
     local effect = StartParticleFxLoopedAtCoord("scr_heist_ornate_thermal_burn", ptfx, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
     Citizen.Wait(4000)
-    print("seks")
+    print("U gay")
     StopParticleFxLooped(effect, 0)
 end)
 
@@ -165,7 +165,7 @@ AddEventHandler("efe:ptfxparticlesec", function(method)
     SetPtfxAssetNextCall("scr_ornate_heist")
     local effect = StartParticleFxLoopedAtCoord("scr_heist_ornate_thermal_burn", ptfx, 0.0, 0.0, 0.0, 1.0, false, false, false, false)
     Citizen.Wait(4000)
-    print("seks")
+    print("humm")
     StopParticleFxLooped(effect, 0)
 end)
 
@@ -378,8 +378,8 @@ AddEventHandler('efe:pediyurutiki', function()
     TriggerEvent("efe:propcreate")
 end)
 	
-    exports["np-target"]:AddCircleZone("kapipatlat", vector3(870.4505, -2288.83, 32.441), 1.0, {
-        name ="kapipatlat",
+    exports["np-target"]:AddCircleZone("capitulate", vector3(870.4505, -2288.83, 32.441), 1.0, {
+        name ="capitulate",
         useZ = true,
         --debugPoly=true
         }, {
@@ -387,7 +387,7 @@ end)
                 {
                     event = "efe:pediyurut",
                     icon = "fas fa-bomb",
-                    label = "Kapıyı Patlat!",
+                    label = "Blast the Door!",
                 },
              },
              job = {"all"},
@@ -403,7 +403,7 @@ end)
                     {
                         event = "efe:silahver",
                         icon = "fas fa-box",
-                        label = "Silahları Yağmala!",
+                        label = "Loot Weapons!",
                     },
                  },
                  job = {"all"},
